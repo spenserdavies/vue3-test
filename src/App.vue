@@ -39,19 +39,19 @@ function useSum() {
 
   state.result = computed(() =>  {
     if(state.operator){
-      if(state.operator.toString() == '-'){
+      if(state.operator == '-'){
         return parseInt(state.num1) - parseInt(state.num2)
       }
-      if(state.operator.toString() == '+'){
+      if(state.operator == '+'){
         return parseInt(state.num1) + parseInt(state.num2)
       }
-      if(state.operator.toString() == '*'){
+      if(state.operator == '*'){
         return parseInt(state.num1) * parseInt(state.num2)
       }
-      if(state.operator.toString() == '/'){
+      if(state.operator == '/'){
         return parseInt(state.num1) / parseInt(state.num2)
       }
-      if(state.operator.toString() == '^'){
+      if(state.operator == '^'){
         return Math.pow(state.num1, state.num2);
       }
     }
